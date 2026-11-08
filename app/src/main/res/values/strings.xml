@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">PracticaMenuAndroid</string>
+    <string name="app_name">P4 Menús</string>
+    <string name="btn_hide_toolbar">Ocultar Toolbar</string>
+    <string name="btn_show_toolbar">Mostrar Toolbar</string>
+    <string name="menu_favorite">Favorito</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_option_one">Opción 1</string>
+    <string name="menu_option_two">Opción 2</string>
+    <string name="toast_option_one">Has seleccionado: Opción 1</string>
+    <string name="toast_option_two">Has seleccionado: Opción 2</string>
 </resources>

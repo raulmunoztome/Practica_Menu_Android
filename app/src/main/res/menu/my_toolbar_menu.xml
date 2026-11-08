@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--BOTON MAPS-->
+    <item
+        android:id="@+id/action_1"
+        android:title="@string/menu_favorite"
+        android:icon="@drawable/baseline_favorite_24"
+        app:showAsAction="ifRoom" />
+    <!--BOTON CAMARA-->
+    <item
+        android:id="@+id/action_2"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/baseline_settings_24"
+        app:showAsAction="ifRoom" />
+    <!-- Menú desplegable (tres puntos) -->
+    <item
+        android:id="@+id/option_one"
+        android:title="@string/menu_option_one"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/option_two"
+        android:title="@string/menu_option_two"
+        app:showAsAction="never" />
+</menu>
