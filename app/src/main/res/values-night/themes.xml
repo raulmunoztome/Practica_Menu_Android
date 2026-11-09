@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.PracticaMenuAndroid" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/verde_principal</item>
-        <item name="colorPrimaryVariant">@color/verde_oscuro</item>
+        <!-- Colores de marca -->
+        <item name="colorPrimary">@color/verde_oscuro</item>
         <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Configuración de fondos y superficies oscuras -->
         <item name="android:colorBackground">@color/fondo_noche</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
     </style>
 </resources>

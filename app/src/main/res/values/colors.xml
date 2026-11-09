@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="verde_principal">#2E7D32</color>
-    <color name="verde_oscuro">#1B5E20</color>
+    <color name="verde_oscuro">#01300D</color>
     <color name="fondo_pantalla">#E8F5E9</color>
     <color name="fondo_noche">#14231A</color>
 </resources>
