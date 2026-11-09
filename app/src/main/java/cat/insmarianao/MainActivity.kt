@@ -1,6 +1,7 @@
 package cat.insmarianao
 
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
 import android.os.Bundle
@@ -20,17 +21,33 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
+    private var fotoGuardada: Bitmap? = null //PAra guardar la foto después de girar la pantalla
     private val tomarFoto = registerForActivityResult(ActivityResultContracts.TakePicturePreview()) {
             foto -> if (foto != null) {
+
         val raiz = findViewById<LinearLayout>(R.id.raiz)
+        fotoGuardada = foto
         //pasamos la foto de la camara al fondo
         raiz.background = BitmapDrawable(resources, foto)
         }
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putParcelable("foto", fotoGuardada)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
+        fotoGuardada = savedInstanceState?.getParcelable("foto")
+
+        if (fotoGuardada != null) {
+            val raiz = findViewById<LinearLayout>(R.id.raiz)
+            raiz.background = BitmapDrawable(resources, fotoGuardada)
+        }
 
         val myToolbar: Toolbar = findViewById(R.id.my_toolbar)
 
