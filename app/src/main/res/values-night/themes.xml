@@ -3,6 +3,7 @@
     <style name="Base.Theme.PracticaMenuAndroid" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Colores de marca -->
         <item name="colorPrimary">@color/verde_oscuro</item>
+        <item name="android:statusBarColor">#300000</item>
         <item name="colorOnPrimary">@color/white</item>
 
         <!-- Configuración de fondos y superficies oscuras -->
