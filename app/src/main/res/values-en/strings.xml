@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">P4 Menu</string>
+    <string name="btn_hide_toolbar">Hide Toolbar</string>
+    <string name="btn_show_toolbar">Show Toolbar</string>
+    <string name="menu_favorite">Favs</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_option_one">Option 1</string>
+    <string name="menu_option_two">Option 2</string>
+    <string name="toast_option_one">Selected: Option 1</string>
+    <string name="toast_option_two">Selected: Option 2</string>
+</resources>

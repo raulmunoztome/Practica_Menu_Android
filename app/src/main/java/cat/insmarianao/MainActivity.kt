@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-
         outState.putParcelable("foto", fotoGuardada)
     }
 
@@ -43,18 +42,16 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
         fotoGuardada = savedInstanceState?.getParcelable("foto")
-
         if (fotoGuardada != null) {
             val raiz = findViewById<LinearLayout>(R.id.raiz)
             raiz.background = BitmapDrawable(resources, fotoGuardada)
         }
 
-        val myToolbar: Toolbar = findViewById(R.id.my_toolbar)
-
+        val myToolbar = findViewById<Toolbar>(R.id.my_toolbar)
         setSupportActionBar(myToolbar) // activar Toolbar
 
-        val btnOcultar: Button = findViewById(R.id.btnOcultar)
-        val btnMostrar: Button = findViewById(R.id.btnMostrar)
+        val btnOcultar = findViewById<Button>(R.id.btnOcultar)
+        val btnMostrar = findViewById<Button>(R.id.btnMostrar)
 
         btnOcultar.setOnClickListener {
             myToolbar.visibility = View.GONE
