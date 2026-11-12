@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     private val tomarFoto = registerForActivityResult(ActivityResultContracts.TakePicturePreview()) {
             foto -> if (foto != null) {
 
-        val raiz = findViewById<LinearLayout>(R.id.raiz)
+        val raiz = findViewById<View>(R.id.raiz)
         fotoGuardada = foto
         //pasamos la foto de la camara al fondo
         raiz.background = BitmapDrawable(resources, foto)
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         fotoGuardada = savedInstanceState?.getParcelable("foto")
         if (fotoGuardada != null) {
-            val raiz = findViewById<LinearLayout>(R.id.raiz)
+            val raiz = findViewById<View>(R.id.raiz)
             raiz.background = BitmapDrawable(resources, fotoGuardada)
         }
 
